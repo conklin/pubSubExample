@@ -1,5 +1,5 @@
 steps:
-  - name: gradle:7.0.0-jre11
+  - name: gradle:6.8.3-jre11
     entrypoint: gradle
     args: [ "build" ]
     dir: 'demo/'
