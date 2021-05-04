@@ -15,7 +15,7 @@ cat > backend.tf <<EOF
 terraform {
   backend "gcs" {
     prefix  = "terraform/state"
-    bucket  = $BUCKET_NAME
+    bucket  = "$BUCKET_NAME"
   }
 }
 EOF
