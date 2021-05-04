@@ -1,7 +1,7 @@
 steps:
   - name: gradle:6.8.3-jre11
     entrypoint: gradle
-    args: [ "build" ]
+    args: [ "build", "--debug"]
     dir: 'demo/'
   - name: 'gcr.io/${PROJECT_ID}/terraform'
     args: ['init']
